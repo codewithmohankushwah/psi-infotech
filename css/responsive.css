@@ -81,7 +81,7 @@
     .footer-top-main {flex-wrap: wrap; row-gap: 25px; justify-content: flex-start; padding: 40px 0 45px 0;}
     .service {width: 50%;}
     .footer-bottom-main {row-gap: 20px; justify-content: center; flex-wrap: wrap;}
-    .box h2 {font-size: 45px; line-height: 30px;}
+    .box h2 {font-size: 45px; line-height: 30px; margin-bottom:25px;}
     .btn {min-width: 145px; line-height: 45px;}
     .input-row input {padding: 0 70px 0 18px}
     body {padding-top: 137px;}
