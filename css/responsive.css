@@ -228,4 +228,5 @@
     .form-box input {height: 36px;}
     .form-box select {height: 36px;}
     body {padding-top: 133px;}
+    .box{padding: 32px 0;}
 }
