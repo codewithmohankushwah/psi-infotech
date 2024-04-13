@@ -402,6 +402,26 @@
         </div>
     </footer>
 
+    <div id="color-theme">
+        <div class="theme-wrapper">
+            <div class="theme-setting">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+            </div>
+            <div class="theme-color">
+                <h6>color theme</h6>
+                <div class="color-codes">
+                    <div class="primary cp" style="background-color: #4C7492;"></div>
+                    <div class="red cp" style="background-color: red;"></div>
+                    <div class="blue cp" style="background-color: blue;"></div>
+                    <div class="green cp" style="background-color: green;"></div>
+                    <div class="yellow cp" style="background-color: yellow;"></div>
+                    <div class="orange cp" style="background-color: orange;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/slick.js"></script>
     <script>
@@ -430,6 +450,35 @@
             });
 
         })
+        jQuery(document).ready(function () {
+            jQuery('.theme-setting').click(function () {
+                jQuery('#color-theme').toggleClass('theme-switcher')
+            });
+        });
+
+
+        $('.primary').click(switchGray);
+        $('.red').click(switchWhite);
+        $('.blue').click(switchBlue);
+        $('.green').click(switchYellow);
+
+        function switchGray() {
+            $('body').attr('class', 'gray');
+        }
+
+        function switchWhite() {
+            $('body').attr('class', 'red');
+        }
+
+        function switchBlue() {
+            $('body').attr('class', 'blue');
+        }
+
+        function switchYellow() {
+            $('body').attr('class', 'yellow');
+        }
+
+
         var counted = 0;
         jQuery(window).scroll(function () {
 
@@ -465,9 +514,9 @@
 
         $(window).scroll(function () {
             if ($(this).scrollTop() > 120) {
-                $('body').addClass('fixed');
+                $('#header-bottom').addClass('changeHeader');
             } else {
-                $('body').removeClass('fixed');
+                $('#header-bottom').removeClass('changeHeader');
             }
         });
 
