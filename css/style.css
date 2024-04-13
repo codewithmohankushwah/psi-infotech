@@ -280,7 +280,6 @@ body {
     background-color: var(--secondary-color);
     border-top: 2px solid var(--white-color);
 }
-
 #header-bottom.changeHeader {
     position: fixed;
     left: 0;
@@ -290,12 +289,10 @@ body {
     animation: scroll 1s linear;
     border-top: 0;
 }
-
 @keyframes scroll {
     0% {
         transform: translateY(-116px);
     }
-
     100% {
         transform: translateY(0);
     }
