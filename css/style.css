@@ -197,6 +197,7 @@ body {
     padding: 0;
     background-color: #F7F7F7;
     box-sizing: border-box;
+    padding-top: 165px;
     transition: all ease 0.5s;
 }
 
@@ -222,7 +223,13 @@ body {
 }
 
 
-
+#header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
 
 #header-top {
     width: 100%;
@@ -279,23 +286,6 @@ body {
     width: 100%;
     background-color: var(--secondary-color);
     border-top: 2px solid var(--white-color);
-}
-#header-bottom.changeHeader {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 99;
-    animation: scroll 1s linear;
-    border-top: 0;
-}
-@keyframes scroll {
-    0% {
-        transform: translateY(-116px);
-    }
-    100% {
-        transform: translateY(0);
-    }
 }
 
 .logo {
