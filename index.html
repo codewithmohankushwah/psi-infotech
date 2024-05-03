@@ -14,6 +14,9 @@
 </head>
 
 <body>
+
+    <div id="preloader"></div>
+
     <header id="header">
         <div id="header-top">
             <div class="container">
@@ -519,6 +522,12 @@
                 $('#header-bottom').removeClass('changeHeader');
             }
         });
+
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = 'none';
+        })
 
     </script>
 </body>
